@@ -1,17 +1,19 @@
 image: ubuntu:16.04
 
 before_script:
-  - apt-get install -y python
-  - apt-get install -y python-pip
+  - apt update -y
+  - apt install -y python
+  - apt install -y python-pip
+  - apt install -y python tox
 
 py27:
   script:
-  - tox -e py27
+    - tox -e py27
 
 py34:
   script:
-  - tox -e py34
+    - tox -e py34
 
 pep8:
   script:
-  - tox -e pep8
+    - tox -e pep8
