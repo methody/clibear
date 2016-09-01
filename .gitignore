@@ -5,3 +5,6 @@
 .testrepository
 .tox
 .venv
+AUTHORS
+ChangeLog
+build
