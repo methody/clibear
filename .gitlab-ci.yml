@@ -2,7 +2,7 @@ image: ubuntu:16.04
 
 before_script:
   - apt update
-  - apt install -y python python-pip python-tox
+  - apt install -y python python3 python-pip python-tox
 
 py27:
   script:
