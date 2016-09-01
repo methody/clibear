@@ -1,0 +1,15 @@
+before_script:
+  - apt-get install -y python
+  - apt-get install -y python-pip
+
+py27:
+  script:
+  - tox -e py27
+
+py34:
+  script:
+  - tox -e py34
+
+pep8:
+  script:
+  - tox -e pep8
